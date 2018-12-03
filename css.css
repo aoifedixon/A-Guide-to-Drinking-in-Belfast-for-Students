@@ -1,0 +1,228 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+body { 
+  font-family: 'Calibri', sans-serif;
+  font-size: #666;
+  background-color: Grey 
+}
+
+span.navigationSpace {
+    padding-left: 10px;
+}
+
+p {
+	color: #000000;
+	font-size: 14px;
+}
+
+footer {
+	font-size: 10px;	
+}
+
+h1 {
+	font-size: 32px;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	font-size:14xp;
+	color: black;
+}
+
+	a:link {
+		color: white;
+		bacground-colour: transparent;
+		text-decoration: none;
+	}
+	a:visited {
+		color: #f8f8f8;
+		background-color: tansparent;
+		text-decoration: none;
+	}
+	a:hover {
+		color: #3b94d9;
+		text-decoration: underline;
+	}
+	a:active {
+		color: #3b94d9;
+		background-color: transparent;
+		text-decoration: underline;
+	}
+	
+imgbg:hover
+{
+	background-color: #3b94d9;
+}
+
+/* STRUCTURE */
+
+#pagewrap {
+	padding: 5px;
+	width: 960px;
+	margin: 20px auto;
+}
+header {
+	height: 25px;
+	padding: 10px;
+	background: black;
+}
+#content {
+	width: 294px;
+	padding: 5px 15px;
+}
+
+#middle {
+	width: 290px; /* Account for margins + border values */
+	float: left;
+	padding: 5px 15px;
+	margin: 0px 5px 5px 5px;
+}
+
+#sidebar {
+	width: 270px;
+	padding: 5px 15px;
+	float: left;
+}
+footer {
+	clear: both;
+	padding: 0 15px;
+}
+
+/************************************************************************************
+MEDIA QUERIES
+*************************************************************************************/
+/* for 980px or less */
+@media screen and (max-width: 980px) {
+	
+	#pagewrap {
+		width: 94%;
+	}
+	#content {
+		width: 41%;
+		padding: 1% 4%;
+	}
+	#middle {
+		width: 41%;
+		padding: 1% 4%;
+		margin: 0px 0px 5px 5px;
+		float: right;
+	}
+	
+	#sidebar {
+		clear: both;
+		padding: 1% 4%;
+		width: auto;
+		float: none;
+	}
+
+	header, footer {
+		padding: 1% 4%;
+	}
+}
+
+/* for 700px or less */
+@media screen and (max-width: 600px) {
+
+	#content {
+		width: auto;
+		float: none;
+	}
+	
+	#middle {
+		width: auto;
+		float: none;
+		margin-left: 0px;
+	}
+	
+	#sidebar {
+		width: auto;
+		float: none;
+	}
+
+}
+
+/* for 480px or less */
+@media screen and (max-width: 480px) {
+
+	header {
+		height: auto;
+	}
+	h1 {
+		font-size: 2em;
+	}
+	#sidebar {
+		display: none;
+	}
+
+}
+
+
+#content {
+	background: #f8f8f8;
+}
+#sidebar {
+	background: #f0efef;
+}
+header, #content, #middle, #sidebar {
+	margin-bottom: 5px;
+}
+
+/*originally #pagewrap, header, #content, #middle, #sidebar, footer*/
+header, #content, #middle, #sidebar {
+	border: solid 1px #ccc;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #3b94d9;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker blue color */
+input[type=submit]:hover {
+    background-color: #3A91d9;
+}
+
+/* Add a background color and some padding around the form */
+.contactcontainer {
+    border-radius: 5px;
+    background-color: #f0efef;
+    padding: 20px;
+}
+
+
+.hoverinfo {
+  position: absolute;
+  
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hoverinfo p {
+  display: none;
+  color: #000000;
+}
+
+.hoverinfo:hover p {
+  background-color: rgba(255, 255, 255, 0.7);
+  display: block;
+}
